@@ -1,0 +1,22 @@
+Target Macchina WindowsXP
+---------------------------------------------------------------------------------------
+Scenario 1)
+Nello scenario 1 si chiede di fare una 
+scansione con nmap senza il firewall attivato, che quindi
+avviando una scansione rilevera le porte e reletivi servizi
+attivi
+
+---------------------------------------------------------------------------------------
+Scenario 2)
+Nello scenario 2 si chiede di eseguire una scansione con 
+nmap con il firewall attivato, che come visto dal report di nmap
+non fornirà nessun dato imporante in quanto essendo il firewall 
+in ascolto delle connessioni in entrata filtrira i risultati, fornendo 
+un report incompleto in quanto non fornira nessuno stato delle porte aperte e chiuse.
+
+---------------------------------------------------------------------------------------
+Considerazioni finali:
+Nel caso dello scenario 2 ad una semplice scansione utilizzando i vari metodi che ci consente di utilizzare
+nmap che vanno dalla connessione completa o attraverso il protocollo di rete icmp magari il firewall potrà fermare
+il malintenzionato alla scansione dei servizi attivi.Invece utilizzando tecniche un po' piu sofisticate riuscira comunque
+ad aggirare il firewall, quindi il firewall non sostituisce un monitoraggio attivo delle connessioni.
